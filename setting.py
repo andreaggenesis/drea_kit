@@ -1,11 +1,18 @@
-from tkinter import Tk, Label
+import tkinter as tk
 
-window= Tk()
-window.title("Drea and Kit's Game")
-window.geometry("700x400")
+window = tk.Tk()
 
-window.configure(bg="pink")
-label= Label(window, text="Hello", font=("Arial Black",78,"bold") bg= ("pink"), fg= ("white"))
-label.pack (pady=100)
+
+window.title("Fortune Teller")
+
+window.geometry("600x300")
+window.configure(background="pink")
+
+label = tk.Label(window, text="Hello")
+label.pack(pady=20)
+
+
+button = tk.Button(window, text="Click Me!")
+button.pack(pady=10)
 
 window.mainloop()
